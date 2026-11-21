@@ -1,18 +1,58 @@
-# Local secrets
+# Local environment and secrets
 .env
 .env.*
 !.env.example
 !.env.sample
 *.pem
 *.key
+*.p12
+*.pfx
 
 # Operating system files
 .DS_Store
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+$RECYCLE.BIN/
 
-# Temporary files and logs
+# Local editor and workspace files
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+~$*
+
+# Logs and temporary files
 *.log
 *.tmp
 *.temp
-~$*
+
+# Dependencies and generated caches
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.npm/
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.gradle/
+
+# Build and test output
+coverage/
+dist/
+build/
+out/
+target/
+bin/
+obj/
